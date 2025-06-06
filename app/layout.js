@@ -3,7 +3,7 @@ import "./globals.css";
 // import Footer from "@/components/Common/Footer";
 import Header from "@/components/Common/Header";
 import { ClerkProvider } from "@clerk/nextjs";
-import Footer from "@/components/Common/Footer";
+import { Toaster } from "@/components/ui/sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,19 +18,19 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider 
+    <ClerkProvider
     >
       <html lang="en" suppressHydrationWarning>
         <body
           className={`${inter.className}`}
         >
-     
-            {/* header */}
-            <Header />
-            {children}
-            {/* footer */}
-            <Footer />
-       
+
+          {/* header */}
+          <Header />
+          <main className="min-h-screen">{children}</main>
+          <Toaster richColors/>
+
+
         </body>
       </html>
     </ClerkProvider>

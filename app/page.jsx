@@ -1,5 +1,9 @@
+import ActionPage from "@/components/ActionPage";
+import Footer from "@/components/Common/Footer";
+import FAQ from "@/components/FAQ";
 import Features from "@/components/Features";
 import HeroSection from "@/components/HeroSection";
+import ReviewCard from "@/components/ReviewCard";
 import State from "@/components/State";
 import Testimonial from "@/components/Testimonial";
 import WorkFlow from "@/components/WorkFlow";
@@ -19,6 +23,10 @@ export default function Home() {
         <State/>
         <WorkFlow/>
         <Testimonial/>
+        <ReviewCard/>
+        <FAQ/>
+        <ActionPage/>
+        <Footer/>
 
 
         

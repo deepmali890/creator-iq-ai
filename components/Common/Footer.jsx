@@ -8,7 +8,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <>
-      <div className="text-center mb-10">
+      <div className="text-center mt-20 mb-10">
         <a href="#" className="flex items-center justify-center mb-5 text-2xl font-semibold text-gray-900">
           <img src="https://www.svgrepo.com/show/499962/music.svg" className="h-12 mr-3 sm:h-9" alt="Landwind Logo" />
           <Link href="/" className="text-gray-900 font-bold text-2xl flex items-center gap-1">
@@ -31,8 +31,8 @@ const Footer = () => {
           </a>.
         </span>
 
-        <ul className="flex justify-center mt-5 space-x-5">
-          <li>
+        <ul className="flex justify-center mt-5 space-x-5 ">
+          <li className=''>
             <a href="#" className="text-gray-500 hover:text-gray-900">
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path fill-rule="evenodd"
